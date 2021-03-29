@@ -115,11 +115,12 @@
             <outputDirectory>/oozie-core</outputDirectory>
         </file>
         <!-- Oozie Documentation -->
-        <!-- <file>
-            <source>${basedir}/../docs/target/oozie-docs-${project.version}-docs.zip</source>
+        <file>
+            <!-- <source>${basedir}/../docs/target/oozie-docs-${project.version}-docs.zip</source> -->
+            <source>${basedir}/../docs/target/oozie-docs-${project.version}.zip</source>
             <outputDirectory>/</outputDirectory>
             <destName>docs.zip</destName>
-        </file> -->
+        </file>
         <!-- Oozie Client TAR.GZ  -->
         <file>
             <!-- <source>${basedir}/../client/target/oozie-client-${project.version}-client.tar.gz</source> -->

@@ -78,7 +78,8 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
                     <finalName>oozie-${project.version}</finalName>
-                    <tarLongFileMode>gnu</tarLongFileMode>
+                    <!-- <tarLongFileMode>gnu</tarLongFileMode> -->
+                    <tarLongFileMode>posix</tarLongFileMode>
                     <descriptors>
                         <descriptor>../src/main/assemblies/distro.xml</descriptor>
                     </descriptors>
