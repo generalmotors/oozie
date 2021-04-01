@@ -16,8 +16,8 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
@@ -90,44 +90,44 @@
         <clover.license>/home/jenkins/tools/clover/latest/lib/clover.license</clover.license>
 
 
-         <!-- Sharelib component versions -->
-         <hive.version>1.2.2</hive.version>
-         <hive.jline.version>2.12</hive.jline.version>
-         <pig.version>0.16.0</pig.version>
-         <pig.classifier>h2</pig.classifier>
-         <hive.classifier>core</hive.classifier>
-         <sqoop.version>1.4.7</sqoop.version>
-         <spark.version>1.6.1</spark.version>
-         <spark.streaming.kafka.version>1.6.1</spark.streaming.kafka.version>
-         <spark.bagel.version>1.6.1</spark.bagel.version>
-         <spark.guava.version>14.0.1</spark.guava.version>
-         <spark.scala.binary.version>2.10</spark.scala.binary.version>
-         <sqoop.classifier>hadoop260</sqoop.classifier>
-         <tez.version>0.8.4</tez.version>
-         <joda.time.version>2.9.9</joda.time.version>
-         <avro.version>1.8.2</avro.version>
+        <!-- Sharelib component versions -->
+        <hive.version>1.2.2</hive.version>
+        <hive.jline.version>2.12</hive.jline.version>
+        <pig.version>0.16.0</pig.version>
+        <pig.classifier>h2</pig.classifier>
+        <hive.classifier>core</hive.classifier>
+        <sqoop.version>1.4.7</sqoop.version>
+        <spark.version>1.6.1</spark.version>
+        <spark.streaming.kafka.version>1.6.1</spark.streaming.kafka.version>
+        <spark.bagel.version>1.6.1</spark.bagel.version>
+        <spark.guava.version>14.0.1</spark.guava.version>
+        <spark.scala.binary.version>2.10</spark.scala.binary.version>
+        <sqoop.classifier>hadoop260</sqoop.classifier>
+        <tez.version>0.8.4</tez.version>
+        <joda.time.version>2.9.9</joda.time.version>
+        <avro.version>1.8.2</avro.version>
 
-         <jetty.version>9.3.27.v20190418</jetty.version>
-         <apache.jsp.version>8.0.33</apache.jsp.version>
+        <jetty.version>9.3.27.v20190418</jetty.version>
+        <apache.jsp.version>8.0.33</apache.jsp.version>
 
-         <jline.version>0.9.94</jline.version>
-         <openjpa.version>2.4.2</openjpa.version>
-         <derby.version>10.14.2.0</derby.version>
-         <xerces.version>2.11.0</xerces.version>
-         <curator.version>2.5.0</curator.version>
-         <jackson.version>2.6.5</jackson.version>
-         <log4j.version>1.2.17</log4j.version>
-         <activemq.version>5.15.9</activemq.version>
-         <commons.lang3.version>3.3.2</commons.lang3.version>
-         <httpcore.version>4.3.3</httpcore.version>
-         <httpclient.version>4.3.6</httpclient.version>
-         <kyro.version>2.22</kyro.version>
-         <javax.servlet.api.version>3.0.1</javax.servlet.api.version>
-         <jgit.version>5.0.1.201806211838-r</jgit.version>
-         <spotbugs.annotations.version>3.1.11</spotbugs.annotations.version>
-         <spotbugs-maven-plugin.version>3.1.11</spotbugs-maven-plugin.version>
-         <spotbugs.version>3.1.11</spotbugs.version>
-         <powermock.version>2.0.2</powermock.version>
+        <jline.version>0.9.94</jline.version>
+        <openjpa.version>2.4.2</openjpa.version>
+        <derby.version>10.14.2.0</derby.version>
+        <xerces.version>2.11.0</xerces.version>
+        <curator.version>2.5.0</curator.version>
+        <jackson.version>2.6.5</jackson.version>
+        <log4j.version>1.2.17</log4j.version>
+        <activemq.version>5.15.9</activemq.version>
+        <commons.lang3.version>3.3.2</commons.lang3.version>
+        <httpcore.version>4.3.3</httpcore.version>
+        <httpclient.version>4.3.6</httpclient.version>
+        <kyro.version>2.22</kyro.version>
+        <javax.servlet.api.version>3.0.1</javax.servlet.api.version>
+        <jgit.version>5.0.1.201806211838-r</jgit.version>
+        <spotbugs.annotations.version>3.1.11</spotbugs.annotations.version>
+        <spotbugs-maven-plugin.version>3.1.11</spotbugs-maven-plugin.version>
+        <spotbugs.version>3.1.11</spotbugs.version>
+        <powermock.version>2.0.2</powermock.version>
     </properties>
 
     <modules>
@@ -246,18 +246,18 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                 <groupId>org.apache.oozie</groupId>
+                <groupId>org.apache.oozie</groupId>
                 <artifactId>oozie-sharelib-hcatalog</artifactId>
                 <version>${project.version}</version>
                 <exclusions>
                     <exclusion>
-                            <groupId>joda-time</groupId>
-                            <artifactId>joda-time</artifactId>
+                        <groupId>joda-time</groupId>
+                        <artifactId>joda-time</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
             <dependency>
-                 <groupId>org.apache.oozie</groupId>
+                <groupId>org.apache.oozie</groupId>
                 <artifactId>oozie-sharelib-hive2</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -1238,23 +1238,23 @@
                 <version>1.6.6</version>
             </dependency>
 
-           <dependency>
+            <dependency>
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-client</artifactId>
                 <version>${activemq.version}</version>
-           </dependency>
+            </dependency>
 
-           <dependency>
+            <dependency>
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-broker</artifactId>
                 <version>${activemq.version}</version>
-           </dependency>
+            </dependency>
 
-           <dependency>
+            <dependency>
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-kahadb-store</artifactId>
                 <version>${activemq.version}</version>
-           </dependency>
+            </dependency>
 
             <dependency>
                 <groupId>commons-logging</groupId>
@@ -1442,7 +1442,7 @@
                 <groupId>org.hamcrest</groupId>
                 <artifactId>hamcrest-all</artifactId>
                 <version>1.3</version>
-           </dependency>
+            </dependency>
 
             <dependency>
                 <groupId>org.powermock</groupId>
@@ -1489,7 +1489,7 @@
                 <version>${curator.version}</version>
             </dependency>
 
-             <dependency>
+            <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-client</artifactId>
                 <version>${curator.version}</version>
@@ -1744,7 +1744,18 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-assembly-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.3.0</version>
+                    <!-- Added by Taylor Conkle @ GM -->
+                    <!-- Resolves 'user id too big' error in mvn build-->
+                    <configuration>
+                        <descriptors>
+                            <descriptor>src/assembly/distribution.xml</descriptor>
+                        </descriptors>
+                        <tarLongFileMode>posix</tarLongFileMode>
+                        <outputDirectory>${project.build.directory}</outputDirectory>
+                        <appendAssemblyId>false</appendAssemblyId>
+                    </configuration>
+                    <!--  -->
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1851,11 +1862,11 @@
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.0.0</version>
                     <configuration>
-                       <filesets>
+                        <filesets>
                             <fileset>
                                 <directory>build</directory>
                             </fileset>
-                       </filesets>
+                        </filesets>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -1915,14 +1926,14 @@
                     </dependency>
                 </dependencies>
                 <executions>
-                 <execution>
-                    <id>findbug</id>
-                    <phase>verify</phase>
-                    <goals>
-                        <goal>check</goal>
-                    </goals>
-                 </execution>
-             </executions>
+                    <execution>
+                        <id>findbug</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <!-- xml plugin is used for transforming the spotbugs xml output into a friendlier html page -->
             <plugin>
@@ -1939,8 +1950,7 @@
                                 <exclude>**/findsecbugs*.jar</exclude>
                             </excludes>
                             <fileMappers>
-                                <fileMapper
-                                       implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+                                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
                                     <targetExtension>.html</targetExtension>
                                 </fileMapper>
                             </fileMappers>
@@ -2066,9 +2076,19 @@
             </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.3.0</version>
                 <configuration>
                     <ignoreMissingDescriptor>true</ignoreMissingDescriptor>
                     <attach>false</attach>
+                    <!-- Added by Taylor Conkle @ GM -->
+                    <!-- Resolves 'user id too big' error in mvn build-->
+                    <descriptors>
+                        <descriptor>src/assembly/distribution.xml</descriptor>
+                    </descriptors>
+                    <tarLongFileMode>posix</tarLongFileMode>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <!--  -->
                 </configuration>
             </plugin>
             <plugin>
@@ -2085,7 +2105,7 @@
                         <exclude>**/*.md</exclude>
                         <exclude>examples/src/main/data/*</exclude>
                         <exclude>core/src/test/resources/test-ioutils.txt</exclude>
-						<exclude>core/src/test/resources/oldWorkFlowApp.serialized</exclude>
+                        <exclude>core/src/test/resources/oldWorkFlowApp.serialized</exclude>
                         <exclude>sharelib/pig/src/test/resources/PigMain.txt</exclude>
                         <exclude>sharelib/hive/src/test/resources/HiveMain.txt</exclude>
                         <exclude>webapp/src/main/resources/.gitignore</exclude>

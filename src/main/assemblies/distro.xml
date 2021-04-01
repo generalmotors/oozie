@@ -116,19 +116,22 @@
         </file>
         <!-- Oozie Documentation -->
         <file>
-            <source>${basedir}/../docs/target/oozie-docs-${project.version}-docs.zip</source>
+            <!-- <source>${basedir}/../docs/target/oozie-docs-${project.version}-docs.zip</source> -->
+            <source>${basedir}/../docs/target/oozie-docs-${project.version}.zip</source>
             <outputDirectory>/</outputDirectory>
             <destName>docs.zip</destName>
         </file>
         <!-- Oozie Client TAR.GZ  -->
         <file>
-            <source>${basedir}/../client/target/oozie-client-${project.version}-client.tar.gz</source>
+            <!-- <source>${basedir}/../client/target/oozie-client-${project.version}-client.tar.gz</source> -->
+            <source>${basedir}/../client/target/oozie-client-${project.version}.tar.gz</source>
             <outputDirectory>/</outputDirectory>
             <destName>oozie-client-${project.version}.tar.gz</destName>
         </file>
         <!-- Oozie examples TAR.GZ  -->
         <file>
-            <source>${basedir}/../examples/target/oozie-examples-${project.version}-examples.tar.gz</source>
+            <!-- <source>${basedir}/../examples/target/oozie-examples-${project.version}-examples.tar.gz</source> -->
+            <source>${basedir}/../examples/target/oozie-examples-${project.version}.tar.gz</source>
             <outputDirectory>/</outputDirectory>
             <destName>oozie-examples.tar.gz</destName>
         </file>
